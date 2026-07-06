@@ -3,6 +3,7 @@ from app.routers import invoices
 from app.routers import dashboard
 from app.database import Base, engine
 from fastapi.middleware.cors import CORSMiddleware
+from app.routers import upload
 
 # Import models so SQLAlchemy knows about them
 from app.models.invoice import Invoice
@@ -31,6 +32,7 @@ app.add_middleware(
 
 app.include_router(invoices.router)
 app.include_router(dashboard.router)
+app.include_router(upload.router)
 @app.get("/")
 def home():
     return {

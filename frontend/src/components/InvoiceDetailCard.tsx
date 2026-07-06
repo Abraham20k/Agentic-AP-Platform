@@ -26,7 +26,7 @@ export default function InvoiceDetailCard({
             </p>
 
             <p>
-                <strong>Amount:</strong> ${invoice.amount}
+                <strong>Amount:</strong> {invoice.amount}
             </p>
 
             <p>

@@ -1,13 +1,13 @@
 import "./Dashboard.css";
-
+import UploadCard from "../components/UploadCard";
 import { useState } from "react";
-
+import DashboardHeader from "../components/DashboardHeader";
 import DashboardLayout from "../layouts/DashboardLayout";
 import StatCard from "../components/Cards/StatCard";
 import SearchBar from "../components/SearchBar";
 import InvoiceTable from "../components/InvoiceTable";
 import InvoiceDetailCard from "../components/InvoiceDetailCard";
-
+import SidePanel from "../components/SidePanel";
 import { useInvoices } from "../hooks/useInvoices";
 
 export default function Dashboard() {
@@ -51,6 +51,10 @@ export default function Dashboard() {
     return (
         <DashboardLayout>
 
+
+
+            <DashboardHeader />
+
             <div className="stats">
 
                 <StatCard
@@ -76,19 +80,31 @@ export default function Dashboard() {
 
             </div>
 
-            <SearchBar
-                value={search}
-                onChange={setSearch}
-            />
+            <div className="dashboard-content">
 
-            <InvoiceTable
-                invoices={filteredInvoices}
-                onSelect={setSelectedInvoice}
-            />
+                <div>
 
-            <InvoiceDetailCard
-                invoice={selectedInvoice}
-            />
+                    <UploadCard />
+
+                    <SearchBar
+                        value={search}
+                        onChange={setSearch}
+                    />
+
+                    <InvoiceTable
+                        invoices={filteredInvoices}
+                        onSelect={setSelectedInvoice}
+                    />
+
+                    <InvoiceDetailCard
+                        invoice={selectedInvoice}
+                    />
+
+                </div>
+
+                <SidePanel />
+
+            </div>
 
         </DashboardLayout>
     );
