@@ -1,0 +1,40 @@
+.sidebar{
+    width:260px;
+    background:var(--sidebar);
+    border-right:1px solid var(--border);
+    padding:30px;
+}
+
+.sidebar h2{
+    margin-bottom:40px;
+}
+
+.sidebar nav{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.sidebar button{
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    padding:14px;
+
+    background:none;
+
+    border:none;
+
+    color:var(--text);
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.sidebar button:hover{
+    background:var(--primary);
+}

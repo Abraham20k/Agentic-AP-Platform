@@ -1,0 +1,23 @@
+.header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:30px;
+
+    border-bottom:1px solid var(--border);
+
+    background:var(--bg);
+
+}
+
+.header p{
+
+    color:var(--muted);
+
+    margin-top:5px;
+
+}

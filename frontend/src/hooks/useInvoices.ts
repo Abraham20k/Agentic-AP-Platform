@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getInvoices } from "../services/invoiceservice";
+import { getInvoices } from "../services/invoiceService";
 
 export const useInvoices = () => {
     return useQuery({

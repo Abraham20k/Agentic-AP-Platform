@@ -1,0 +1,45 @@
+.status{
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    display:inline-block;
+
+}
+
+.approved{
+
+    background:#123d24;
+
+    color:#4ADE80;
+
+}
+
+.processing{
+
+    background:#4a3413;
+
+    color:#FACC15;
+
+}
+
+.rejected{
+
+    background:#4b1414;
+
+    color:#F87171;
+
+}
+
+.uploaded{
+
+    background:#12324b;
+
+    color:#60A5FA;
+
+}

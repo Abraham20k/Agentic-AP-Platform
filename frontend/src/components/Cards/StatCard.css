@@ -1,0 +1,51 @@
+.stat-card{
+
+    background:linear-gradient(
+        135deg,
+        #1E293B,
+        #111827
+    );
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:24px;
+
+    transition:.25s;
+
+    min-height:120px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:#3B82F6;
+
+}
+
+.stat-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    color:#94A3B8;
+
+    margin-bottom:20px;
+
+}
+
+.stat-value{
+
+    font-size:38px;
+
+    font-weight:700;
+
+}

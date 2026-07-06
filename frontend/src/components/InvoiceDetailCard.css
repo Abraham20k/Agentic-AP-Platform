@@ -1,0 +1,27 @@
+.detail-card{
+
+    margin-top:25px;
+
+    background:#1d2638;
+
+    border-radius:16px;
+
+    padding:24px;
+
+    color:white;
+
+}
+
+.detail-card h2{
+
+    margin-bottom:20px;
+
+}
+
+.detail-card p{
+
+    margin:12px 0;
+
+    color:#b7c3dc;
+
+}
